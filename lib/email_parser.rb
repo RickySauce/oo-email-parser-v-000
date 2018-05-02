@@ -13,7 +13,7 @@ class EmailParser
 
   def parse
     @emails.split(/[\s,]/)
-    @emails.delete_if {|emails| emails.length == 0}
+    @emails.each {|emails| emails.delete if emails.length == 0}
   end
 
 end
