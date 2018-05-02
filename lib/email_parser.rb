@@ -13,8 +13,8 @@ class EmailParser
 
   def parse
     email_array = @emails.split(/[\s,]/)
-    email_array.each {|emails| emails.delete if emails.length == 0}
-    email_array
+    email_array.reject do |emails| emails.length == 0
+    end
   end
 
 end
