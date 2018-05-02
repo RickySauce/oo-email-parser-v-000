@@ -6,14 +6,10 @@
 
 class EmailParser
   attr_accessor :email
-@@all = Array.new
+  @@all = Array.new
 
-def parse(csv_emails)
-  email_list = self.new
-  email_list.split(", ")
-  @@all << email_list
-
-end
-
+  def initialize(email_list)
+    @email_list = email_list
+  end
 
 end
