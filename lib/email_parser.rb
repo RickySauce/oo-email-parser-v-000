@@ -10,6 +10,7 @@ class EmailParser
 
 def parse(csv_emails)
   email_list = self.new
+  email_list.split(", ")
   @@all << email_list
 
 end
