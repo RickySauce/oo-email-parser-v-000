@@ -13,8 +13,9 @@ class EmailParser
 
   def parse
     email_array = @emails.split(/[\s,]/)
-    email_array.reject do |emails| emails.length == 0
+    email_array.reject do |emails| emails.length == 0 && emails == emails
     end
+
   end
 
 end
