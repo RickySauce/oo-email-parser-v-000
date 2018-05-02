@@ -12,7 +12,7 @@ class EmailParser
   end
 
   def parse
-    self.split(", ")
+    self.emails.split(", ")
   end
 
 end
