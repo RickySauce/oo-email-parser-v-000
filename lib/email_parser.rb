@@ -12,4 +12,7 @@ class EmailParser
     @email_list = email_list
   end
 
+  def parse(email_list)
+  end
+
 end
