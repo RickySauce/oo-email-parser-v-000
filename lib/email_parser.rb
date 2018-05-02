@@ -12,7 +12,7 @@ class EmailParser
     @email_list = email_list
   end
 
-  def self.parse(email_list)
+  def parse(email_list)
   end
 
 end
