@@ -4,8 +4,10 @@
 # or whitespace (' ').
 
 class EmailParser
-@@all = Array.new 
+@@all = Array.new
 
 def parse(csv_emails)
-  
+end
+
+
 end
